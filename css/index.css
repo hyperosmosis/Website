@@ -1,0 +1,161 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* Global */
+body {
+	background-color: #fff;
+	color: #777;
+	font: normal 15px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+}
+
+a {
+	text-decoration: none;
+	color: #444;
+}
+
+a:hover {
+  color: #C0C0C0;
+}
+
+h2 {
+	color: #444;
+	font-size: 50px;
+	text-align: right;
+	line-height: 85%;
+}
+
+h3 {
+	font-size: 16px;
+	font-family: 'Playfair Display', serif;
+	font-style: oblique;
+}
+
+p {
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	color: black;
+	font-size: 12px;
+	padding-bottom: 6px;
+}
+
+.wrapper {
+	margin: 0 auto;
+	padding: 0 10px;
+	width: 960px;
+}
+
+.container{
+	padding: 0 10px;
+	width: 960px;
+	height: 500px;
+}
+
+
+
+/* Header */
+
+header {
+	height: 120px;
+	padding-bottom: 15px;
+}
+
+header h1 {
+	float: left;
+	margin-top: 32px;
+}
+
+
+header nav {
+	float: right;
+}
+
+header nav ul li {
+	float: left;
+	display: inline-block;
+	margin-top: 70px;
+}
+
+header nav ul li a {
+	color: #444;
+	text-transform: uppercase;
+	display: block;
+	font-weight: lighter;
+	letter-spacing: 2px;
+	margin-right: 25px;
+}
+
+/* Main Page */
+#main-page {
+	padding-top: 1px;
+	height:500px;
+	margin-top: 1px;
+	position: relative;
+	background: url('https://raw.githubusercontent.com/hyperosmosis/Personal-Design/master/Images/Vista.JPG') no-repeat center;
+	background-size: cover;
+}
+
+#main-pgage img {
+    flex-shrink: 0;
+    min-width: 100%;
+    min-height: 100%
+}
+
+#main-page h2 {
+	margin: 180px 0 40px 0;
+}
+
+/* About */
+
+#about {
+	clear:both;
+	padding-top: 1px;
+	width:900px;
+	margin-top: 1px;
+	margin:0 auto;
+}
+
+
+.aboutimg {
+	width: 500px;
+	float:left;
+	padding-right:40px;
+}
+
+.content {
+    float: left;
+	width: 300px;
+}
+
+/* Thumbnail */
+
+.thumbnails {
+	margin-right: -5px;
+}
+
+.thumbnails a {
+	float: left;
+	width: 20%;
+	margin-right: 5px;
+	margin-bottom: 15px;
+	box-sizing: border-box;
+}
+
+.thumbnails img {
+	display: block;
+}
+
+.thumbnails:hover img{
+	opacity: .6;
+}
+
+.thumbnails img:hover {
+	opacity: 1;
+}
+
+/* Contact */
+
+.contactimg {
+	width: 900px;
+	float: center;
+	margin-bottom: 40px;
+}
+

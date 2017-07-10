@@ -1,11 +1,19 @@
 @charset "UTF-8";
 /* CSS Document */
 
+
+/*RESET*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {margin:0; padding:0; border:0; outline:0; font-size:100%; vertical-align:baseline; background:transparent;} body {line-height: 1;}ol, ul{list-style:none;} blockquote, q{quotes:none;} blockquote:before, blockquote:after, q:before, q:after{content:'';content:none;} :focus{outline:0;} ins{text-decoration:none;} del{text-decoration:line-through;} table{border-collapse:collapse; border-spacing:0;}
+
 /* Global */
 body {
 	background-color: #fff;
 	color: #777;
 	font: normal 15px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+}
+
+img {
+  max-width: 100%
 }
 
 a {
@@ -39,8 +47,7 @@ p {
 
 .wrapper {
 	margin: 0 auto;
-	padding: 0 10px;
-	width: 960px;
+	padding: 0 30px;
 }
 
 .container{
@@ -61,26 +68,39 @@ header {
 header h1 {
 	float: left;
 	margin-top: 32px;
+	width: 250px;
+	display: block;
 }
 
 
-header nav {
+nav {
 	float: right;
+	position: relative;
+	margin-right: 20px;
 }
 
-header nav ul li {
+nav ul li {
 	float: left;
 	display: inline-block;
 	margin-top: 70px;
 }
 
-header nav ul li a {
+nav ul li a {
 	color: #444;
 	text-transform: uppercase;
 	display: block;
 	font-weight: lighter;
 	letter-spacing: 2px;
 	margin-right: 25px;
+}
+
+#menu-icon {
+	margin-top: 50px;
+	display: hidden;
+	width: 40px;
+	height: 40px;
+	background: url(../Images/Menu-Icon.png) center;
+	background-size: contain;
 }
 
 /* Main Page */
@@ -93,15 +113,10 @@ header nav ul li a {
 	background-size: cover;
 }
 
-#main-pgage img {
-    flex-shrink: 0;
-    min-width: 100%;
-    min-height: 100%
-}
-
 #main-page h2 {
 	margin: 180px 0 40px 0;
 }
+
 
 /* About */
 
@@ -159,3 +174,42 @@ header nav ul li a {
 	margin-bottom: 40px;
 }
 
+/* Mobile */
+@media screen and (max-width: 600px) {
+h2 {
+	display: none;
+}
+
+#menu-icon {
+	display:inline-block;
+}
+	
+nav ul, nav:active ul { 
+	display: none;
+	position: absolute;
+	background: #fff;
+	opacity : 0.8;
+	center:5px;
+	right: -10px;
+	top: 90px;
+	width: 175px;
+	text-align: center;
+	z-index: 2;
+}
+
+#main-page {
+	z-index: 1;
+}
+
+nav ul li {
+	width: 100%;
+	padding: 8px 0 15px 0;
+	padding-left: 12px;
+	margin: 0px;
+}
+
+
+nav:hover ul {
+	display: block;
+}
+}

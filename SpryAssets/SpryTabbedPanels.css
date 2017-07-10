@@ -45,7 +45,7 @@
  */
 .TabbedPanelsTabGroup {
 	margin: 0px;
-	padding: 0px;
+	padding-left: 10px;
 }
 
 /* This is the selector for the TabbedPanelsTab. This container houses
